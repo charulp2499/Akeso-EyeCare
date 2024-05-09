@@ -1,0 +1,5 @@
+dlib==19.24.4
+numpy==1.26.4
+opencv-python-headless==4.9.0.80
+PyAutoGUI==0.9.54
+pygame==2.5.2
