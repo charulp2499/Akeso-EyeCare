@@ -60,7 +60,7 @@ cap.set(cv2.CAP_PROP_FRAME_HEIGHT, 480)
 
 center_gaze_vector = calibrate()
 
-smoothing_factor = 0.5   
+smoothing_factor = 0.9
 smoothed_gaze_vector = None
 
 # Main Loop
@@ -97,7 +97,7 @@ while running:
 
         calibrated_gaze_vector = smoothed_gaze_vector - center_gaze_vector  
 
-        movement_scale = 20 
+        movement_scale = 50
         dot_movement = calibrated_gaze_vector * movement_scale
 
         dot_position[0] += int(dot_movement[0]) 
